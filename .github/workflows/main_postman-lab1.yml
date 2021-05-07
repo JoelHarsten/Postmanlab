@@ -1,12 +1,7 @@
 # Docs for the Azure Web Apps Deploy action: https://go.microsoft.com/fwlink/?linkid=2134798
 # More GitHub Actions for Azure: https://go.microsoft.com/fwlink/?linkid=2135048
 
-name: Azure App Service - postman-lab1(Production), Build and deploy DotnetCore app
-
-on:
-  push:
-    branches:
-      - main
+name: Azure App Service - postman-lab1 and postman-lab2
 
 jobs:
   build-and-deploy:

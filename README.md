@@ -52,7 +52,7 @@ If you have never used Postman, make sure to install it and play around with it.
 ![Get App variables](img/2cGetAppVariables.png)
 1. Create a secret in in "Certificates & secrets" and copy the value to the "Current Value" of client_secret. <br>
 ![Create secret](img/2dCreateSecret.png)
-1. Find the scope by going back to All App registrations and searching for PostmanLab2. Copy clientId and add "/.default". <br>
+1. Find the scope by going back to All App registrations and searching for Postman-Lab2. Copy clientId and add "/.default". <br>
 ![Find Scope](img/2eFindScope.png)
 1. Choose your environment in the dropdown in the top right corner where it says "No Environment".
 
