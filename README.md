@@ -52,7 +52,7 @@ If you have never used Postman, make sure to install it and play around with it.
 
 1. Create new Environment ”PostmanLab”<br>
 ![Create Environment](img/2aCreateEnvironment.png)
-1. Create variables tenant, clientId, clientSecret and scope. See instructions below on how to find the values. Save the value of secrets in "Current Value" instead of "Initial Value". This way the secrets are not synched to Postman servers. If you are running Postman without logging in, all values need to be in "Current Value", when you are logged in, they are automatically copied to "Current Value" when you paste them in "Initial Value". **Make sure you save the environment every time you make changes!** <br>
+1. Create variables tenant, client_id, client_secret and scope. See instructions below on how to find the values. Save the value of secrets in "Current Value" instead of "Initial Value". This way the secrets are not synched to Postman servers. If you are running Postman without logging in, all values need to be in "Current Value", when you are logged in, they are automatically copied to "Current Value" when you paste them in "Initial Value". **Make sure you save the environment every time you make changes!** <br>
 ![The variables](img/2bTheVariables.png)
 1. Copy clientId and tenant from the overview page of the App Registration you created before.  <br>
 ![Get App variables](img/2cGetAppVariables.png)

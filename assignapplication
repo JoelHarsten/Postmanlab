@@ -1,0 +1,4 @@
+$CallingService = "2273466e-7bd6-49f4-a872-ed361d2119a7"
+$ProtectedService = "a958c1eb-88b4-4a0c-962c-34dde5f581b5"
+$AppRoleId = "410e55af-964b-4f98-bc27-3c7c5912ed1c"
+New-AzureADServiceAppRoleAssignment -ObjectId $CallingService -PrincipalId $CallingService -ResourceId $ProtectedService -id $AppRoleId 
