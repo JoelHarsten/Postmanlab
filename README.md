@@ -114,7 +114,8 @@ pm.environment.set("postmanLab2Token", jsonData.access_token);
 ![Export Collection](img/3bExportCollection.png)
 1. Make sure you add and commit and push the files to your repository. If you run git in the command prompt run the following commands:
 ```
-git commit -am "Add Postman tests in pipeline"
+git add .
+git commit -m "Add Postman tests in pipeline"
 git push
 ```
 
