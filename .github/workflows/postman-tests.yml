@@ -1,0 +1,24 @@
+name: Run Postman Collection
+
+on:
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Download newman
+        run: sudo npm install newman -g
+      - uses: cschleiden/replace-tokens@v1
+        with:
+          files: '["**/*.json"]'
+        env:
+          clientSecret: ${{ secrets.clientSecret }}
+      - name: Run Postman tests with newman
+        run: newman run src/postman/PostmanLab.postman_collection.json -e src/postman/PostmanLab.postman_environment.json --reporters cli,junit
+        continue-on-error: true
+      - name: Publish Unit Test Results
+        uses: EnricoMi/publish-unit-test-result-action@v1
+        with:
+          files: newman/*.xml
