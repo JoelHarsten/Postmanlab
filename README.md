@@ -11,6 +11,12 @@ It is good with some knowledge about Azure AD, but the guide will take you throu
 
 If you have never used Postman, make sure to install it and play around with it. They provide a lot of good learning material on https://learning.postman.com/.
 
+# Table of content:
+[Lab 0 - Create an App Registration](#lab-0---create-an-app-registration) <br>
+[Lab 1 - Postman request](#lab-1---postman-request)<br>
+[Lab 2 - OAuth in Postman](#lab-2---oauth-in-postman)<br>
+[Lab 3 - Testing in pipeline](#lab-3---testing-in-pipeline)<br>
+[So how do you protect it better?](#so-how-do-you-protect-it-better?)<br>
 
 *************************
 *************************
