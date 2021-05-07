@@ -157,3 +157,14 @@ jobs:
 * You get 401 instead of 200. 
     - Check that the Requests are in the correct order. The requests are run in the order they appear in Postman. The token requests need to be before the request using the token.
     - Check in the exported Environment json-file that the values of the variables are as expected.
+
+# So how do you protect it better?
+
+For all services that you protect with OAuth2 in Azure AD, you need to turn on "User Assignment Required". This is done in the Enterprise Application corresponding to your App registration and go to properties > turn on User Assignment Required. Then you can add Users & Groups to the default role in Users & Groups. You can also specify different roles in the App Registration. If you want to give access to a specific service, you have to create an App Role in the App registration. But you will not be able to assign the role to a service in the UI. Instead you have to use a powershell script:
+
+```powershell
+$CallingService = "<ObjectID of the calling service Enterprise Application. It can be either a Managed Identity, or the Enterprise Application corresponding to an App Registration>"
+$ProtectedService = "<ObjectID of the Protected service Enterprise Application>"
+$AppRoleId = "<ID of AppRole on Protected service>"
+New-AzureADServiceAppRoleAssignment -ObjectId $CallingService -PrincipalId $CallingService -ResourceId $ProtectedService -id $AppRoleId 
+```
