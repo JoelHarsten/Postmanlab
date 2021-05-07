@@ -18,7 +18,7 @@ jobs:
       - name: Run Postman tests with newman
         run: newman run src/postman/PostmanLab.postman_collection.json -e src/postman/PostmanLab.postman_environment.json --reporters cli,junit
         continue-on-error: true
-      - name: Publish Unit Test Results
+      - name: Publish Postman Test Results
         uses: EnricoMi/publish-unit-test-result-action@v1
         with:
           files: newman/*.xml
