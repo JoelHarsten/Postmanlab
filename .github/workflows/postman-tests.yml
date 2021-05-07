@@ -14,7 +14,7 @@ jobs:
         with:
           files: '["**/*.json"]'
         env:
-          clientSecret: ${{ secrets.clientSecret }}
+          client_secret: ${{ secrets.client_secret }}
       - name: Run Postman tests with newman
         run: newman run src/postman/PostmanLab.postman_collection.json -e src/postman/PostmanLab.postman_environment.json --reporters cli,junit
         continue-on-error: true
