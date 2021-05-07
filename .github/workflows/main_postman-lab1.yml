@@ -42,6 +42,6 @@ jobs:
       with:
         app-name: postman-lab2
         slot-name: Production
-        publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_43AC82066750403BBAFAB0653452BE2F }}
+        publish-profile: ${{ secrets.APP_SERVICE_POSTMANLAB2_PUBLISHPROFILE }}
         package: ${{env.DOTNET_ROOT}}/myapp
 
