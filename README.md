@@ -149,7 +149,7 @@ jobs:
         with:
           files: newman/*.xml
 ```
-3. Press "Start Commit". The action should run automatically. Go to the Workflow and see if it was successful. You should be able to see "Test results" where the Postman test results are listed. <br>
+3. Press "Start Commit". Then go to the action and start it. Go to the Workflow and see if it was successful. You should be able to see "Test results" where the Postman test results are listed. <br>
 
 ![Test results](img/3cTestResult.png)
 
